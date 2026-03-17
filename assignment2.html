@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandy Beauty Mansion</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+display:flex;
+background:linear-gradient(135deg,#ff4e9b,#8a2be2);
+color:white;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:230px;
+height:100vh;
+background:black;
+position:fixed;
+padding-top:40px;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:40px;
+color:#ff4e9b;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+padding:15px 20px;
+}
+
+.sidebar ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+display:block;
+transition:0.3s;
+}
+
+.sidebar ul li a:hover{
+background:#ff4e9b;
+padding-left:10px;
+border-radius:5px;
+}
+
+/* MAIN CONTENT */
+
+.main{
+margin-left:230px;
+padding:40px;
+width:100%;
+}
+
+section{
+min-height:100vh;
+margin-bottom:40px;
+}
+
+/* HOME */
+
+.home{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.home-text h1{
+font-size:45px;
+}
+
+.home-text p{
+margin-top:10px;
+font-size:18px;
+}
+
+.home img{
+width:300px;
+border-radius:20px;
+}
+
+/* ABOUT */
+
+.about h2{
+margin-bottom:15px;
+}
+
+.about p{
+line-height:1.6;
+max-width:700px;
+}
+
+/* SERVICES */
+
+.services h2{
+margin-bottom:20px;
+}
+
+.service-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.service{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+.footer{
+margin-top:30px;
+font-size:14px;
+opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+<h2>MBM</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<section id="home" class="home">
+
+<div class="home-text">
+<h1>Mandy Beauty Mansion</h1>
+<p>Where Glamour Resides</p>
+<p>Luxury beauty services designed to make every woman feel confident and glamorous.</p>
+</div>
+
+<img src="images/mbm5.webp" alt="Mandy Beauty">
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Us</h2>
+
+<p>
+Welcome to Mandy Beauty Mansion, a luxury beauty brand dedicated to enhancing beauty and confidence.
+We specialize in professional makeup, glam sessions, and beauty services tailored for every occasion.
+</p>
+
+<p>
+Located in Lagos, Mandy Beauty Mansion is known for delivering flawless beauty transformations
+for birthdays, weddings, photoshoots, and special events.
+</p>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-list">
+
+<div class="service">
+<h3>Bridal Makeup</h3>
+<p>Luxury bridal glam for your special day.</p>
+</div>
+
+<div class="service">
+<h3>Birthday Glam</h3>
+<p>Look stunning for your birthday photoshoot.</p>
+</div>
+
+<div class="service">
+<h3>Photoshoot Makeup</h3>
+<p>Professional makeup for photography sessions.</p>
+</div>
+
+<div class="service">
+<h3>Gele Styling</h3>
+<p>Traditional gele styling for events.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="images/mbm1.jpg">
+<img src="images/mbm2.jpg">
+<img src="images/mbm3.jpg">
+<img src="images/mbm4.jpeg">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: mandybeautymansion@email.com</p>
+<p>Phone: +234 8131988916</p>
+<p>Location: Lagos, Nigeria</p>
+
+<div class="footer">
+© 2026 Mandy Beauty Mansion
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
